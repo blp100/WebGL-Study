@@ -1,4 +1,4 @@
-let squareRotation = 0.0;
+let cubeRotation = 0.0;
 let deltaTime = 0;
 
 //
@@ -145,8 +145,8 @@ function main() {
     deltaTime = now - then;
     then = now;
 
-    drawScene(gl, programInfo, buffers, squareRotation);
-    squareRotation += deltaTime;
+    drawScene(gl, programInfo, buffers, cubeRotation);
+    cubeRotation += deltaTime;
 
     requestAnimationFrame(render);
   }
